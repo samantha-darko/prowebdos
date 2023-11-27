@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ECECF0;
+    color: #0C1633;
+    width: 100%;
+    height: 100%;
+}
+
+.box_main {
+    display: block;
+    width: 40%;
+    margin: 60px auto 0 auto;
+    padding: 30px;
+    border-radius: 2px;
+    background-color: #F2F2F2;
+    box-shadow: 2px 2px 20px #000000;
+    position: relative;
+    z-index: 0;
+}
+
+.login{
+    display: block;
+    width: 100%;
+}
+
+.datos{
+    margin: 2% 0 3% 0;
+}
+
+.datos label, .datos input{
+    display: block;
+    width: 100%;
+    font-size: 1.2em;
+    padding: 0 0 0 1%;
+    margin: 2px 0;
+}
+
+#btnIngresar{
+    display: block;
+    width: 40%;
+    margin: 3% auto;
+    padding: 1% 0;
+    font-size: 1.2em;
+}
+
+.register{
+    display: block;
+    width: 100%;
+    margin: 40px 0 0 0;
+    text-align: center;
+}
