@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/854b826ed2.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/Base.css">
+    <link rel="stylesheet" href="css/Registrarse.css">
+    <link rel="shortcut icon" href="img/forou_white.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
+
+    <title>Registrarse | ForoU</title>
+</head>
+
+<body>
+    <div class="box_main">
+        <form id="register" class="register">
+            <div class="cajita">
+                <div class="logo">
+                    <img src="img/forou_black.png">
+                </div>
+
+                <div>
+                    <div class="datos">
+                        <label>Usuario:</label>
+                        <input id="txtUser" type="text" onkeypress="return Usuario(event);">
+                        <p id="uservacio">*Campo vac&iacute;o.</p>
+                    </div>
+
+                    <div class="datos">
+                        <label>Contrase&ntilde;a:</label>
+                        <div class="mo">
+                            <input id="txtPass" type="password" onkeypress="return Contra(event);">
+                            <button type="button" id="mostrar"><i class="fa-sharp fa-solid fa-eye"></i></button>
+                            <button type="button" id="ocultar"><i class="fa-sharp fa-solid fa-eye-slash"></i></button>
+                        </div>
+                        <p id="passvacio">*Campo vac&iacute;o.</p>
+                    </div>
+
+                    <div class="datos">
+                        <label>Nombre(s):</label>
+                        <input id="txtNombre" type="text" onkeypress="return Nombre(event);">
+                        <p id="nombrevacio">*Campo vac&iacute;o.</p>
+                    </div>
+
+                    <div class="datos">
+                        <label>Apellido(s):</label>
+                        <input id="txtApellido" type="text" onkeypress="return Nombre(event);">
+                        <p id="apellidovacio">*Campo vac&iacute;o.</p>
+                    </div>
+
+                    <div class="datos">
+                        <label>Correo:</label>
+                        <input id="txtCorreo" type="email" onkeypress="return Correo(event);">
+                        <p id="correovacio">*Campo vac&iacute;o.</p>
+                    </div>
+
+                    <div class="datos">
+                        <label>Fecha de Nacimiento:</label>
+                        <input id="txtFechaNac" type="date">
+                        <p id="correovacio">*Campo vac&iacute;o.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="datos">
+                <button type="submit" id="btnRegistrarse">Registrarme</button>
+            </div>
+        </form>
+
+        <div class="register">
+            <label>¿Ya tienes cuenta? <a href="/IniciarSesion">Inicia sesi&oacute;n.</a></label>
+        </div>
+    </div>
+
+    <footer>
+        <div class="izq">
+            <p>Autores</p>
+        </div>
+        <div class="der">
+            <p>Sharon Samantha Estrada Martinez</p>
+            <p>Luis Jair Ignacio Castro</p>
+        </div>
+    </footer>
+
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/Registrarse.js"></script>
+</body>
+
+</html>

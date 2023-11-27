@@ -4,14 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="IniciarSesion.css">
+    <script src="https://kit.fontawesome.com/854b826ed2.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/Base.css">
+    <link rel="stylesheet" href="css/IniciarSesion.css">
+    <link rel="shortcut icon" href="img/forou_white.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
+
     <title>Iniciar Sesi&oacute;n | ¡Bienvenido!</title>
 </head>
 
 <body>
-
     <div class="box_main">
-        <div class="login">
+        <div class="logo">
+            <img src="img/forou_black.png">
+        </div>
+        <form class="login">
             <div class="datos">
                 <label>Usuario:</label>
                 <input id="txtUser" type="text">
@@ -19,18 +30,36 @@
 
             <div class="datos">
                 <label>Contrase&ntilde;a:</label>
-                <input id="txtPass" type="text">
+                <div class="mo">
+                    <input id="txtPass" type="password">
+                    <button type="button" id="mostrar"><i class="fa-sharp fa-solid fa-eye"></i></button>
+                    <button type="button" id="ocultar"><i class="fa-sharp fa-solid fa-eye-slash"></i></button>
+                </div>
             </div>
 
             <div class="datos">
-                <button id="btnIngresar">Ingresar</button>
+                <button type="submit" id="btnIngresar">Ingresar</button>
             </div>
-        </div>
-        
+        </form>
+
         <div class="register">
-            <label>¿No tienes cuenta? <a>Crea tu cuenta aqu&iacute;.</a></label>
+            <label>¿No tienes cuenta? <a href="/Registrarse">Crea tu cuenta aqu&iacute;.</a></label>
         </div>
     </div>
+
+    <footer>
+        <div class="izq">
+            <p>Autores</p>
+        </div>
+        <div class="der">
+            <p>Sharon Samantha Estrada Martinez</p>
+            <p>Luis Jair Ignacio Castro</p>
+        </div>
+    </footer>
+
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/IniciarSesion.js"></script>
 
 </body>
 

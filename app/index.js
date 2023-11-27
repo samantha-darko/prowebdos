@@ -16,3 +16,11 @@ app.use(express.static(__dirname + "/public"));
 app.get('/', (req, res) => {
     res.sendFile(__dirname + "/pages/IniciarSesion.html")
 })
+
+app.get('/IniciarSesion', (req, res) => {
+    res.sendFile(__dirname + "/pages/IniciarSesion.html")
+})
+
+app.get('/Registrarse', (req, res) => {
+    res.sendFile(__dirname + "/pages/Registrarse.html")
+})
